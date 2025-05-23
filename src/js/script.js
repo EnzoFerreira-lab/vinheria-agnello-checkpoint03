@@ -30,3 +30,14 @@ function calcularEstoqueTotal() {
     console.log(`📦 Estoque total da vinícola: ${total} unidades`);
     alert(`Estoque total: ${total} unidades`);
 }
+function nomesCaixaAlta() {
+    const nomes = vinhos.map(v => v.nome.toUpperCase());
+    console.log("🔠 Nomes dos vinhos em caixa alta:");
+    console.log(nomes);
+    alert("Nomes dos vinhos em caixa alta exibidos no console!");
+}
+
+listarVinhos();
+estoqueBaixo();
+calcularEstoqueTotal();
+nomesCaixaAlta();
