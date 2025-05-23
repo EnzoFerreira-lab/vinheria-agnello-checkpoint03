@@ -17,3 +17,11 @@ function listarVinhos() {
     });
     alert("Lista de vinhos exibida no console!");
 }
+function estoqueBaixo() {
+    const baixoEstoque = vinhos.filter(vinho => vinho.estoque < 5);
+    console.log("⚠️ Vinhos com estoque baixo:");
+    baixoEstoque.forEach(v => {
+        console.log(`${v.nome} - Estoque: ${v.estoque}`);
+    });
+    alert("Vinhos com estoque baixo exibidos no console!");
+}
