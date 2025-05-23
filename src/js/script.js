@@ -25,3 +25,8 @@ function estoqueBaixo() {
     });
     alert("Vinhos com estoque baixo exibidos no console!");
 }
+function calcularEstoqueTotal() {
+    const total = vinhos.reduce((soma, vinho) => soma + vinho.estoque, 0);
+    console.log(`📦 Estoque total da vinícola: ${total} unidades`);
+    alert(`Estoque total: ${total} unidades`);
+}
